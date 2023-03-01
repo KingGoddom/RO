@@ -1,6 +1,6 @@
 local Config = {
     WindowName = "DOM888 JUBJUB",
-	Color = Color3.fromRGB(255,128,64),
+	Color = Color3.fromRGB(0,255,0),
 	Keybind = Enum.KeyCode.RightControl
 }
 repeat wait() until game:IsLoaded() wait()
@@ -67,7 +67,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/1201f
 local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
 
 local Tab1 = Window:CreateTab("Anime Dimensions Simulator")
-local Tab2 = Window:CreateTab("UI Settings")
+local Tab2 = Window:CreateTab("ตั้งค่า")
 
 local Section1 = Tab1:CreateSection("")
 local Section2 = Tab1:CreateSection("")
