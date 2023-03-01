@@ -96,7 +96,7 @@ local Dropdown1 = Section1:CreateDropdown("Difficulty", Difficulty, function(Str
 	Settings.Difficulty = String
 end)
 
-local Dropdown1 = Section1:CreateDropdown("Raids", Raids, function(String)
+local Dropdown1 = Section1:CreateDropdown("เลือกด่านหรือRaids", Raids, function(String)
 	Settings.Raids = String
 end)
 
@@ -104,7 +104,7 @@ end)
 local Toggle1 = Section1:CreateToggle("Auto Punch", Settings.JJ, function(State)
 Settings.JJ = State
 spawn(function()
-while wait(0.7) and Settings.JJ do
+while wait(1) and Settings.JJ do
     pcall(
         function()
             game:GetService("VirtualInputManager"):SendMouseButtonEvent(0,0,0, true, game, 1)
