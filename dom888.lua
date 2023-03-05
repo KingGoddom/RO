@@ -115,7 +115,7 @@ end)
 end)
 
 speed = 50
-local Toggle1 = Section1:CreateToggle("AutoFarm", Settings.AutoFarm, function(State)
+local Toggle1 = Section1:CreateToggle("Auto Skill", Settings.AutoFarm, function(State)
 Settings.AutoFarm = State
 game:GetService("RunService").Stepped:connect(
     function()
