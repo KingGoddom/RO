@@ -25,7 +25,7 @@ local function getCharacters()
     return CharacterLists
 end
 
-local Window = Bracket:Window({Name = "Bubble - Anime Dimensions Simulator",Enabled = true,Position = UDim2.new(0.05,0,0.5,-248)}) do Window:Watermark({Enabled = true})
+local Window = Bracket:Window({Name = "Goddom script from bubble <3",Enabled = true,Position = UDim2.new(0.05,0,0.5,-248)}) do Window:Watermark({Enabled = true})
 
     local MainTab = Window:Tab({Name = "Main"}) do
         local FarmingSection = MainTab:Section({Name = "Farming"}) do local Dimension = {} local Raid = {}
@@ -172,7 +172,7 @@ local Window = Bracket:Window({Name = "Bubble - Anime Dimensions Simulator",Enab
                         ["url"] = "https://tr.rbxcdn.com/3eba3ee83f4f32a0691f8e40738f1833/768/432/Image/Png"
                     },
                     ["footer"] = {
-                        ["text"] = "Bubble",
+                        ["text"] = "DOM888 BoT",
                         ["icon_url"] = "https://media.discordapp.net/attachments/859027411366969364/1067274572212228116/2.png"
                     },
                     ["description"] =
