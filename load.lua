@@ -24,7 +24,7 @@ if not success then
 end
 
 local function Loadscript(Script)
-    local Domain = "https://raw.githubusercontent.com/fleowo/Bubble/request/"
+    local Domain = "https://raw.githubusercontent.com/KingGoddom/RO/main/"
     return loadstring(game:HttpGetAsync(("%s%s.lua"):format(Domain, Script)))()
 end
 
@@ -53,7 +53,6 @@ end
 if not Bubble.Loaded then
     PromptLib("Error", "Bubble does not support this game \nDiscord link has been copied to your clipboard \n(Error Code: 0)", {
         {Text = "OK", LayoutOrder = 0, Primary = true, Callback = function()
-            setclipboard("https://discord.gg/ZSQzPK3t2f")
         end}
     })
     return
@@ -61,6 +60,6 @@ end
 
 LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.InProgress then
-        QueueOnTeleport("loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/fleowo/Bubble/request/Loader.lua')()")
+        QueueOnTeleport("loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/KingGoddom/RO/main/load.lua')()")
     end
 end)
