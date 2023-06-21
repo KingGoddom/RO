@@ -8,7 +8,7 @@ local Players = game:GetService("Players")
 repeat task.wait() until Players.LocalPlayer
 local LocalPlayer = Players.LocalPlayer
 
-if Bubble and Bubble.Loaded then
+if RO and RO.Loaded then
     PromptLib("Error", "Script รันไปแล้วไอ้ฟาย \n(Error Code: 167)", {
         {Text = "OK", LayoutOrder = 0, Primary = true, Callback = function() end}
     })
@@ -28,7 +28,7 @@ local function Loadscript(Script)
     return loadstring(game:HttpGetAsync(("%s%s.lua"):format(Domain, Script)))()
 end
 
-getgenv().Bubble = {
+getgenv().RO = {
     Loaded = false,
     Utilities = {Misc = Loadscript("Utilities/Misc")},
     Games = {
@@ -42,15 +42,15 @@ getgenv().Bubble = {
     }
 }
 
-for id, gameData in pairs(Bubble.Games) do
+for id, gameData in pairs(RO.Games) do
     if game.PlaceId == id or string.match(info.Name, gameData.Name) then
         print("Found supported game:", gameData.Name)
         Loadscript("Games/"..id)
-        Bubble.Loaded = true
+        RO.Loaded = true
     end
 end
 
-if not Bubble.Loaded then
+if not RO.Loaded then
     PromptLib("Error", "Bubble does not support this game \nDiscord link has been copied to your clipboard \n(Error Code: 0)", {
         {Text = "OK", LayoutOrder = 0, Primary = true, Callback = function()
         end}
