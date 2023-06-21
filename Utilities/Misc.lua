@@ -97,13 +97,13 @@ function Misc:SettingsSection(Window,UIKeybind)
             Callback = function(Bool) Window.Watermark.Enabled = Bool end}):Keybind({Flag = "UI/Watermark/Keybind"})
 
             MenuSection:Button({Name = "Rejoin",Side = "Left",
-            Callback = Bubble.Utilities.Misc.ReJoin})
+            Callback = RO.Utilities.Misc.ReJoin})
 
             MenuSection:Button({Name = "Server Hop",Side = "Left",
-            Callback = Bubble.Utilities.Misc.ServerHop})
+            Callback = RO.Utilities.Misc.ServerHop})
         end
 
-        SettingsTab:AddConfigSection("Bubble","Left")
+        SettingsTab:AddConfigSection("RO","Left")
 
         local BackgroundSection = SettingsTab:Section({Name = "Background",Side = "Right"}) do
             BackgroundSection:Colorpicker({Name = "Color",Flag = "Background/Color",Value = {1,0,0.372,0,false},
@@ -159,14 +159,14 @@ function Misc:SettingsSection(Window,UIKeybind)
             Callback = function() setclipboard("https://discord.gg/888") end})
 
             DiscordSection:Button({Name = "Join Through Discord App",Side = "Left",
-            Callback = Bubble.Utilities.Misc.JoinDiscord})
+            Callback = RO.Utilities.Misc.JoinDiscord})
         end
     end
 end
 
 function Misc:InitAutoLoad(Window)
     Window:SetValue("Background/Offset",296)
-    Window:AutoLoadConfig("Bubble")
+    Window:AutoLoadConfig("RO")
     Window:SetValue("UI/Enabled",Window.Flags["UI/OOL"])
 end
 
