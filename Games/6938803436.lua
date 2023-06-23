@@ -27,9 +27,9 @@ local function getCharacters()
     return CharacterLists
 end
 
-local Window = Bracket:Window({Name = "Anime Dimensions Simulator",Enabled = true,Position = UDim2.new(0.05,0,0.5,-248)}) do Window:Watermark({Enabled = true})
+local Window = Bracket:Window({Name = "Anime Dimensions Simulator(Bubble) - DOM888",Enabled = true,Position = UDim2.new(0.05,0,0.5,-248)}) do Window:Watermark({Enabled = true})
 
-    local MainTab = Window:Tab({Name = "Main"}) do
+    local MainTab = Window:Tab({Name = "Main menu"}) do
         local FarmingSection = MainTab:Section({Name = "Farming"}) do local Dimension = {} local Raid = {}
             FarmingSection:Toggle({Name = "Auto Level",Flag = "Farming/AutoLevel"})
             FarmingSection:Toggle({Name = "Speed Raid",Flag = "Farming/AutoSpeed"})
