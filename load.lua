@@ -60,6 +60,6 @@ end
 
 LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.InProgress then
-        QueueOnTeleport("loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/KingGoddom/RO/main/main.lua')()")
+        QueueOnTeleport("loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/KingGoddom/RO/main/load.lua')()")
     end
 end)
