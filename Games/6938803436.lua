@@ -11,7 +11,7 @@ local Players = game:GetService("Players").LocalPlayer
 local RaidText = Workspace.InteractionCircles.RaidPortal.RaidTimer.Frame.RaidTimerText
 local Lobby = {6938803436,7274690025,7338881230}
 local MapList = {"Fate Dimension", "Ghoul Dimension", "Villain Dimension", "Sword Dimension", "Slime Dimension","Titan Dimension", 
-"Curse Dimension", "Demon Dimension", "Devil Dimension", "Pirate Dimension",
+"Curse Dimension", "Demon Dimension", "Devil Dimension", "Pirate Dimension","Titan Raid","Tengoku Raid", "Hirito Raid","Gear 5 Fluffy Raid"
 "Matsuri Raid","Cosmic Wolfman Raid","Goddess Madoki Raid"}
 repeat task.wait() until Players.PlayerGui:FindFirstChild("MainGui")
 
