@@ -12,9 +12,7 @@ local RaidText = Workspace.InteractionCircles.RaidPortal.RaidTimer.Frame.RaidTim
 local Lobby = {6938803436,7274690025,7338881230}
 local MapList = {"Fate Dimension", "Ghoul Dimension", "Villain Dimension", "Sword Dimension", "Slime Dimension","Titan Dimension", 
 "Curse Dimension", "Demon Dimension", "Devil Dimension", "Pirate Dimension",
-"Yomiichi Raid", "Titan Raid", "Matsuri Raid", "Tengoku Raid", "Hirito Raid", "Reku 100 Raid", "Gear 5 Fluffy Raid", "Cosmic Wolfman Raid", "Tonjuro Sun God Raid", "Vio Raid", "Demon Lord Raid", "Ichini Fullbring Raid",
-"Roku Ultra Instinct Raid", "Chainsaw Raid", "Nardo Beast Raid", "Cursed Sage Raid",
-"Red Emperor Raid", "Tengu Raid", "Christmas Raid", "Infinity Nojo Raid", "Combat Titan Raid", "Esper Raid"}
+"Matsuri Raid","Cosmic Wolfman Raid","Goddess Madoki Raid"}
 repeat task.wait() until Players.PlayerGui:FindFirstChild("MainGui")
 
 local function getCharacters()
